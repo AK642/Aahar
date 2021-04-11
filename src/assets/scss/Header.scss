@@ -1,0 +1,104 @@
+@import './variables';
+
+.header > .container > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > .container > nav > .logo > img {
+    height: 100px;
+    width: 150px;
+}
+
+.header > .container > nav > .nav__links > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header > .container > nav > .nav__links > ul > li {
+    margin-left: 50px;
+}
+
+.header > .container > nav > .nav__links > ul > li > .link{
+    transition: $smooth;
+    text-decoration: none;
+    color: $dark;
+    -webkit-any-link: no;
+    &:hover {
+        color: $primary;
+    }
+}
+
+.header > .container > nav > .nav__links > ul > li > .cart__link {
+    background-color: $primary;
+    color: $pure;
+    padding: 3px 7px 3px 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-hover;
+        color: $pure;
+    }
+}
+
+.header > .container > nav > .nav__links > ul > li > .cart__link > .cart__length {
+    margin-right: 5px;
+}
+
+
+
+
+
+// .header > .header__content {
+//     background-color: rgba(0, 0, 0, 0.751);
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+  
+// .header {
+//     background-image:url(../img/food3.jpg);
+// }
+
+// .header > .header__content > .logo {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .header > .header__content > .logo > img {
+//     height: 100px;
+//     width: 150px;
+// }
+
+// .header > .header__content > .search {
+//     display: table;
+//     vertical-align: middle;
+//     // margin-left: 50px;
+// }
+
+// .header > .header__content > .icons {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .header > .header__content > .icons > .header__icon {
+//     margin: 15px;
+//     color: white;
+// }
+
+// .header > .header__content > .icons > .header__icon > .wish__quantity {
+//     display: block;
+//     height: 12px;
+//     width: 12px;
+//     padding: 10px;
+//     background-color: grey;
+//     border-radius: 50%;
+//     text-align: center;
+    
+// }

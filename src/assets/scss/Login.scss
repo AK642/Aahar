@@ -1,0 +1,84 @@
+@import './variables';
+
+.login {
+    padding-top: 50px;
+    background: $secondary;
+    // height: calc(100vh - 154px);
+}
+
+.login > .login__title {
+    display: flex;
+    justify-content: center;
+}
+
+.login > .login__title > h1 {
+    color: $primary;
+    padding-bottom: 10px;
+}
+
+.login > .login__form {
+    display: flex;
+    justify-content: center;
+}
+
+.login > .login__form > form {
+    padding: 25px 30px;
+    box-shadow: 0px 0px 10px $gray;
+    width: 25%;
+    background: $pure;
+}
+
+.login > .login__form > form > .label > label {
+    font-weight: bold;
+}
+
+.login > .login__form > form > input {
+    border: 2px solid $gray;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login > .login__form > form > .button__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login > .login__form > form > .button__link > .button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 15px;
+    color: $pure;
+    background: $primary;
+    transition: $smooth;
+
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+.login > .login__form > form > .forgotPassword__link {
+    text-align: center;
+}
+
+.login > .register__link > a,
+.login > .login__form > form > .forgotPassword__link > a {
+    text-decoration: none;
+    color: $primary;
+    font-weight: bold;
+    &:hover {
+        color: $primary-hover;
+    }
+}
+
+.login > .register__link {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login > .register__link > .text {
+    margin-right: 5px;
+}
