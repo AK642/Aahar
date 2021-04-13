@@ -1,0 +1,107 @@
+@import './variables';
+
+.service {
+    background-color: $secondary;
+    padding-top: 50px;
+    height: 700px;
+}
+
+.service > .service__section > .service__heading {
+    text-align: center;
+    border-bottom: 10px solid $primary-hover;
+    border-radius: 20px;
+}
+
+.service > .service__section > .service__heading > h1 {
+    color: $primary;
+}
+
+.service > .service__section > .anchor__design {
+    position: relative;
+}
+
+.service > .service__section > .anchor__design > .line1 {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 3px;
+    background-color: $primary-hover;
+    margin-left: 500px;
+}
+
+.service > .service__section > .anchor__design > .line2 {
+    position: absolute;
+    top: 0;
+    height: 250px;
+    width: 3px;
+    background-color: $primary-hover;
+    margin-left: 400px;
+}
+
+.service > .service__section > .anchor__design > .line3 {
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 3px;
+    background-color: $primary-hover;
+    margin-left: 300px;
+}
+
+.service > .service__section > .anchor__design > .hook1,
+.service > .service__section > .anchor__design > .hook2,
+.service > .service__section > .anchor__design > .hook3 {
+    display: flex;
+}
+
+.service > .service__section > .anchor__design > .hook1 > .image > img,
+.service > .service__section > .anchor__design > .hook2 > .image > img,
+.service > .service__section > .anchor__design > .hook3 > .image > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px dashed $primary;
+}
+
+.service > .service__section > .anchor__design > .hook1 > .image,
+.service > .service__section > .anchor__design > .hook2 > .image,
+.service > .service__section > .anchor__design > .hook3 > .image {
+    height: fit-content;
+    width: fit-content;
+    padding: 3px;
+    border: 2px solid $primary-hover;
+    border-radius: 50%;
+}
+
+.service > .service__section > .anchor__design > .hook1 {
+    position: absolute;
+    top: 100px;
+    margin-left: 450px;
+}
+.service > .service__section > .anchor__design > .hook2 {
+    position: absolute;
+    top: 250px;
+    margin-left: 350px;
+}
+.service > .service__section > .anchor__design > .hook3 {
+    position: absolute;
+    top: 400px;
+    margin-left: 250px;
+}
+
+.service > .service__section > .anchor__design > .hook1 > .content,
+.service > .service__section > .anchor__design > .hook2 > .content,
+.service > .service__section > .anchor__design > .hook3 > .content {
+    margin-left: 20px;
+}
+
+.service > .service__section > .anchor__design > .hook1 > .content > h3,
+.service > .service__section > .anchor__design > .hook2 > .content > h3,
+.service > .service__section > .anchor__design > .hook3 > .content > h3 {
+    color: $primary-hover;
+}
+
+.service > .service__section > .anchor__design > .hook1 > .content > p,
+.service > .service__section > .anchor__design > .hook2 > .content > p,
+.service > .service__section > .anchor__design > .hook3 > .content > p {
+    color: $gray;
+}

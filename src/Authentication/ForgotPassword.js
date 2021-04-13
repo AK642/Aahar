@@ -4,6 +4,8 @@ import '../assets/scss/ForgotPassword.scss';
 import { Alert } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import { useAuth } from "./AuthContext"
+import Header from '../Components/Header';
+
 
 const ForgotPassword = () => {
 
@@ -43,30 +45,33 @@ const ForgotPassword = () => {
 
     return (
         <div className="forgotPassword">
-            <div className="forgotPassword__title">
-                <h1>Password Reset</h1>
-            </div>
-            {error && <Alert variant="danger">{error}</Alert>}
-            {message && <Alert variant="success">{message}</Alert>}
-            <div className="forgotPassword__form">
-                <form>
-                    <div className="label">
-                        <label for="email">Email</label>
-                    </div>
-                    <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
-                    <div className="button__link">
-                        <Button disabled={loading} className="button" type="submit" onClick={setPassword}>
-                            Reset Password
-                        </Button>
-                        
-                    </div>
-                    <div className="login__link">
-                        <Link to="/login">Login</Link>
-                    </div>
-                </form>
-            </div>
-            <div className="register__link">
-                <span className="text">Don't have account?</span><Link to="/register">SignUp</Link>
+            <Header />
+            <div className="forgotPassword__section">
+                <div className="forgotPassword__title">
+                    <h1>Password Reset</h1>
+                </div>
+                {error && <Alert variant="danger">{error}</Alert>}
+                {message && <Alert variant="success">{message}</Alert>}
+                <div className="forgotPassword__form">
+                    <form>
+                        <div className="label">
+                            <label for="email">Email</label>
+                        </div>
+                        <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
+                        <div className="button__link">
+                            <Button disabled={loading} className="button" type="submit" onClick={setPassword}>
+                                Reset Password
+                            </Button>
+                            
+                        </div>
+                        <div className="login__link">
+                            <Link to="/login">Login</Link>
+                        </div>
+                    </form>
+                </div>
+                <div className="register__link">
+                    <span className="text">Don't have account?</span><Link to="/register">SignUp</Link>
+                </div>
             </div>
         </div>
     )

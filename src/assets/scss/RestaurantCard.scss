@@ -1,0 +1,77 @@
+@import './variables';
+
+.restaurantCard {
+    width: fit-content;
+    padding: 10px;
+    transition: $smooth;
+    border: 2px solid $pure;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid $gray;
+    }
+}
+
+.restaurantCard > .image > img {
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px $gray;
+
+} 
+
+.restaurantCard > .image {
+    position: relative;
+    width: fit-content;
+    border-radius: 15px;
+
+} 
+
+.restaurantCard > .image > h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $pure;
+    margin: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.restaurantCard > h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.restaurantCard > h4 {
+    font-size: 16px;
+    color: $gray;
+}
+
+.restaurantCard > .description {
+    display: flex;
+    align-items: center;
+}
+
+.restaurantCard > .description > h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+
+}
+
+.restaurantCard > .description > .dot {
+    margin-left: 20px;
+}
+
+.restaurantCard > .description > h5 {
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+}

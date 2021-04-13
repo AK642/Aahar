@@ -1,0 +1,17 @@
+@import './variables';
+
+.restaurants {
+    margin-top: 50px;
+}
+
+.restaurants > .navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurants > .restaurants__cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

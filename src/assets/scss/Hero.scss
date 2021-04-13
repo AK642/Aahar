@@ -1,0 +1,52 @@
+@import './variables';
+
+.hero > .hero__image {
+    position: relative;
+}
+
+.hero > .hero__image > .carousel > .carousel-control-next > .carousel-control-next-icon,
+.hero > .hero__image > .carousel > .carousel-control-prev > .carousel-control-prev-icon {
+    display: none;
+}
+
+.hero > .hero__image > .carousel > .carousel-indicators {
+    display: none;
+}
+
+.hero > .hero__image > .hero__blur {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > .hero__image > .hero__blur > .hero__content {
+    justify-content: center;
+}
+
+.hero > .hero__image > .hero__blur > .hero__content > h1 {
+    color: $secondary;
+    font-size: 55px;
+}
+
+.hero > .hero__image > .hero__blur > .hero__content > .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero > .hero__image > .hero__blur > .hero__content > .button > .btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid $primary;
+    color: $primary;
+    font-size: 18px;
+
+    &:hover {
+        background-color: #b2330160;
+    }
+} 

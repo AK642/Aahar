@@ -1,0 +1,53 @@
+@import './variables';
+
+.getApp {
+    background-color: $gray;
+    padding: 50px 50px;
+
+}
+
+.getApp > .row > .image__section {
+    display: flex;
+    justify-content: center;
+}
+
+.getApp > .row > .image__section > img {
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px $secondary;
+}
+
+.getApp > .row > .description__section {
+    display: flex;
+    justify-content: left;
+    // align-items: center;
+    padding-top: 100px;
+}
+
+.getApp > .row > .description__section > .description {
+    text-align: center;
+}
+
+.getApp > .row > .description__section > .description > h1 {
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.getApp > .row > .description__section > .description > h4 {
+    color: $secondary;
+    margin-bottom: 20px;
+}
+
+.getApp > .row > .description__section > .description > a {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid $primary;
+    color: $primary;
+    font-size: 18px;
+
+    &:hover {
+        background-color: #b23301c4;
+        color: $secondary;
+    }
+}

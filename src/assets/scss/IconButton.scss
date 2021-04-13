@@ -1,0 +1,40 @@
+@import './variables';
+
+.iconButton > .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $secondary;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px $gray;
+}
+
+.iconButton > .button > .image {
+    background-color: $pure;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.iconButton > .button > .image > img {
+    height: 25px;
+    width: 25px;
+}
+
+.iconButton > .button > .text {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconButton > .button > .text > h3 {
+    font-size: 20px;
+}
