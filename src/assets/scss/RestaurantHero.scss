@@ -1,0 +1,75 @@
+@import './variables';
+
+.restaurantHero {
+    background-color: $secondary;
+    padding: 30px 0px;
+    border-top: 10px solid $primary-hover;
+    border-bottom: 10px solid $primary-hover;
+    border-radius: 20px;
+}
+
+.restaurantHero > .row {
+    margin: 0;
+}
+
+.restaurantHero > .row > .image {
+    display: flex;
+    justify-content: center;
+}
+
+.restaurantHero > .row > .image > img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.restaurantHero > .row > .description > h3 {
+    color: $gray;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.restaurantHero > .row > .description > h2 {
+    margin-top: 25px;
+}
+
+.restaurantHero > .row > .description > h2 > span {
+    color: $gray;
+    font-weight: 400;
+}
+
+.restaurantHero > .row > .description > .rating {
+    margin-top: 20px;
+}
+
+.restaurantHero > .row > .description > .rating > h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.restaurantHero > .row > .description > .buttons {
+    margin-top: 40px;
+    display: flex;
+
+}
+
+.restaurantHero > .row > .description > .buttons > .addReview,
+.restaurantHero > .row > .description > .buttons > .showReview {
+    padding: 5px 10px;
+    margin-right: 20px;
+    background-color: $primary;
+    text-decoration: none;
+    color: $pure;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: $smooth;
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+.restaurantHero > .row > .description > .buttons > .showReview > .icon,
+.restaurantHero > .row > .description > .buttons > .addReview > .icon {
+    margin-right: 10px;
+    // margin-bottom: 5px;
+}

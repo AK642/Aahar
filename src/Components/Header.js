@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/images/FoodLand_LOGO.png';
 import Container from '@material-ui/core/Container';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -6,13 +6,22 @@ import { Alert } from "react-bootstrap"
 import '../assets/scss/Header.scss';
 import { useAuth } from "../Authentication/AuthContext"
 import { Link } from "react-router-dom"
+import { cartLength } from '../Cart/cartHelper'
 
+const Header = ({ reload }) => {
 
-const Header = () => {
+    const [cart, setCart] = useState();
+
+    useEffect(() => {
+        setCart(cartLength());
+    }, [reload])
+
+    // console.log(cart)
 
     const { currentUser, logout } = useAuth()
     const [error, setError] = useState("")
 
+    console.log("User:->", currentUser)
     const n = currentUser?.email.length - 10;
     const userName = currentUser?.email.substr(0, n);
 
@@ -40,15 +49,14 @@ const Header = () => {
                             <li><Link to="/" className="link">Home</Link></li>
                             <li><Link to="/menu" className="link">Restaurants</Link></li>
                             <li><Link to="/offers" className="link">Services</Link></li>
-                            <li><Link to="/" className="link">My Orders</Link></li>
+                            <li><Link to="/orders" className="link">My Orders</Link></li>
                             <li><Link to={!currentUser && '/login'} className="link" onClick={handleLogout}>{currentUser ? 'LogOut' : 'LogIn'}</Link></li>
-                            <li><Link to="/cart" className="cart__link"><span className="cart__length">0</span><ShoppingCartIcon /></Link></li>
+                            <li><Link to="/cart" className="cart__link"><span className="cart__length">{cart == 0 ? '' : cart}</span><ShoppingCartIcon /></Link></li>
                         </ul>
                     </div>
                 </nav>
                 {
                     error && <Alert variant="danger">{error}</Alert>
-                
                 }
             </Container>
         </div>

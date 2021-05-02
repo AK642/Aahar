@@ -1,0 +1,55 @@
+@import './variables';
+
+.foodView {
+    padding: 50px 20px;
+    background-color: $secondary;
+}
+
+.foodView > .row > .image__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodView > .row > .image__section > .image {
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.foodView > .row > .image__section > .image > img {
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
+    transition: $smooth;
+    &:hover {
+        height: 420px;
+        width: 625px;
+    }
+}
+
+.foodView > .row > .food__description > h3 {
+    color: $gray;
+    font-size: 24px;
+}
+
+.foodView > .row > .food__description > h4 {
+    margin-top: 25px;
+}
+
+.foodView > .row > .food__description > h2 {
+    margin-top: 25px;
+}
+
+.foodView > .row > .food__description > .button {
+    margin-top: 20px;
+    background-color: $primary;
+    color: $pure;
+    transition: $smooth;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}

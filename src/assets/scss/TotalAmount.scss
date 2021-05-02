@@ -1,0 +1,90 @@
+@import './variables';
+
+.totalAmount {
+    padding: 10px;
+    border: 2px solid $gray;
+    border-radius: 5px;
+}
+
+.totalAmount > .heading {
+    display: flex;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: $primary;
+    color: $pure;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalAmount > .heading > h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.totalAmount > .heading > span {
+    font-size: 24px;
+}
+
+.totalAmount > h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.totalAmount > .detail {
+    padding: 10px;
+    background-color: $secondary;
+    border-radius: 5px;
+}
+
+.totalAmount > .detail > h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: $gray;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $gray;
+    margin: 0;
+}
+
+.totalAmount > .detail > .delivery,
+.totalAmount > .detail > .items__total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    border-bottom: 2px solid $gray;
+
+}
+
+.totalAmount > .detail > .delivery > h2,
+.totalAmount > .detail > .delivery > h3,
+.totalAmount > .detail > .items__total > h3,
+.totalAmount > .detail > .items__total > h2 {
+    font-size: 22px;
+    color: $gray;
+}
+
+.totalAmount > .detail > .total__amount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.totalAmount > .detail > .total__amount > h2,
+.totalAmount > .detail > .total__amount > h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.totalAmount > .button {
+    display: block;
+    width: 100%;
+    background-color: $primary;
+    margin-top: 10px;
+    color: $pure;
+    transition: $smooth;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}

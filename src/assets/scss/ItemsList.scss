@@ -1,0 +1,41 @@
+@import './variables';
+
+.itemsList > .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 15px;
+    background-color: $primary;
+}
+
+.itemsList > .card > .item__detail {
+    display: flex;
+    align-items: center;
+}
+
+.itemsList > .card > .item__detail > img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+} 
+
+.itemsList > .card > .item__detail > .details {
+    margin-left: 20px;
+}
+
+.itemsList > .card > .item__detail > .details > h2 {
+    font-size: 26px;
+}
+
+.itemsList > .card > .item__detail > .details > h3 {
+    font-size: 20px;
+    color: $primary-hover;
+    // background-color: $primary-hover;
+}
+
+.itemsList > .card > .price > h2 {
+    color: $pure;
+    font-size: 28px;
+}

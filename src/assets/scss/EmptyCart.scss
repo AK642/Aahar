@@ -1,0 +1,49 @@
+@import './variables';
+
+.emptyCart {
+    background-color: $secondary;
+    height: calc(100vh - 100px);
+}
+
+.empty__cart {
+    text-align: center;
+}
+
+.empty__cart > h1 {
+    margin-top: 0;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.empty__cart > p {
+    color: $gray;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.empty__cart > img {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.empty__cart > .back__button {
+    text-decoration: none;
+}
+
+.empty__cart > .back__button > .button {
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin-bottom: 30px;
+    box-shadow: 2px -3px 2px $gray;
+    color: $pure;
+    background: $primary;
+    transition: $smooth;
+
+    &:hover {
+        background: $primary-hover;
+    }
+}

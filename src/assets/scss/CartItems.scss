@@ -1,0 +1,64 @@
+@import './variables';
+
+.cartitem > .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cartitem > .item > .description {
+    display: flex;
+    align-items: center;
+}
+
+.cartitem > .item > .description > img {
+    width: 150px;
+    height: 100px;
+}
+
+.cartitem > .item > .description > .item__details {
+    margin-left: 20px;
+    // flex-grow: 1;
+    width: fit-content;
+}
+
+.cartitem > .item > .description > .item__details > .item__name {
+    margin: 0;
+    font-size: 25px;
+}
+
+.cartitem > .item > .description > .item__details > .item__description {
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: $secondary;
+    padding: 3px 15px 3px 3px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+// .cartitem > .item > .button__price {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.cartitem > .item > .price > .remove {
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: $pure;
+    background: $primary;
+    transition: $smooth;
+
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+.cartitem > .item > .price > .item__price {
+    font-weight: bold;
+    margin-right: 40px;
+}

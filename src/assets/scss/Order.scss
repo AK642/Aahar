@@ -1,0 +1,7 @@
+@import './variables';
+
+.order > .order__section {
+    background-color: $secondary;
+    // height: calc(100vh - 100px);
+    padding-top: 20px;
+}

@@ -1,0 +1,8 @@
+@import './variables';
+
+.menu > .menu__section > h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: fit-content;
+    border-bottom: 3px solid $primary-hover;
+}

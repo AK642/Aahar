@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from './reportWebVitals';
+import { StateProvider } from './Redux/StateProvider';
+import reducer, { initialState } from './Redux/reducer';
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import reduce from './Redux/reduce';
+
+// create store
+const store = createStore(
+  reduce,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <StateProvider initialState={initialState} reducer={reducer}>
+        <App />
+      </StateProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

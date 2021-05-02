@@ -1,0 +1,76 @@
+@import './variables';
+
+.fooditem {
+    margin-top: 20px;
+}
+
+.fooditem > .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 10px 25px 50px 25px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 5px solid $gray;
+}
+
+.fooditem > .card > .item__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fooditem > .card > .item__details > .image__link > img {
+    height: 150px;
+    width: 250px;
+}
+
+.fooditem > .card > .item__details > .item__description {
+    margin-left: 20px;
+    // text-align: center;
+}
+
+.fooditem > .card > .item__details > .item__description > h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.fooditem > .card > .item__details > .item__description > .detail {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background: $secondary;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.fooditem > .card > .item__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.fooditem > .card > .item__price > .price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.fooditem > .card > .item__price > .add_to_cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 8px;
+
+    &:hover {
+        background: $primary;
+        color: $pure;
+    }
+}

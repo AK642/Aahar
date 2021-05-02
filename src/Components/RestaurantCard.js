@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../assets/scss/RestaurantCard.scss'
-import Restaurant from '../assets/images/burger-restaurant.jpg'
+import { Link } from 'react-router-dom'
 
-const RestaurantCard = ({image, name, rating, items, duration, price}) => {
-
-    // const [value, setValue] = useState()
+const RestaurantCard = ({id, image, name, rating, items, duration, price}) => {
 
     return (
-        <div className="restaurantCard">
+        <Link className="restaurantCard" to={{pathname: `/restaurant/${id}`}}>
             <div className="image">
                 <img src={image} alt="Restaurant Image"></img>
                 <h3>{duration}</h3>
@@ -19,7 +17,7 @@ const RestaurantCard = ({image, name, rating, items, duration, price}) => {
                 <span className="dot">•</span>
                 <h5>₹{price} per person</h5>
             </div>
-        </div>
+        </Link>
     )
 }
 

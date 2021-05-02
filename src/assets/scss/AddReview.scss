@@ -1,0 +1,39 @@
+@import './variables';
+
+.addReview { 
+    padding: 40px;
+}
+
+.addReview > h1 {
+    font-size: 32px;
+    font-weight: 600px;
+}
+
+.addReview > .rating {
+    display: flex;
+    align-items: center;
+}
+
+.addReview > .rating > .rating__value {
+    margin-bottom: 0;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.addReview > form > input {
+    border: 2px solid $gray;
+    padding: 5px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.addReview > form > .button > .btn {
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: $primary;
+    color: $pure;
+
+    &:hover{
+        background-color: $primary-hover;
+    }
+}

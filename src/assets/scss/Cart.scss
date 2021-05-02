@@ -1,0 +1,27 @@
+@import './variables';
+
+.cart > .cart__section {
+    padding-top: 30px;
+}
+
+.cart > .cart__section > .row > .foodItems > .order__title {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid $gray;
+}
+
+.cart > .cart__section > .row > .foodItems > .order__title > .MuiSvgIcon-root {
+    font-size:xxx-large;
+    // padding-top: 15px;
+}
+
+.cart > .cart__section > .row > .foodItems > .order__title > h1 {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.cart > .cart__section > .row > .foodItems > .item__list {
+    border-bottom: 3px solid $gray;
+}

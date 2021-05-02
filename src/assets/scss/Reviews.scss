@@ -1,0 +1,17 @@
+@import './variables';
+
+.reviews > .reviews__section {
+    padding-top: 20px;
+}
+
+.reviews > .reviews__section > .positive__reviews > h3 {
+    border-top: 2px solid $primary-hover;
+    border-bottom: 2px solid $primary-hover;
+    border-radius: 10px;
+}
+
+.reviews > .reviews__section > .negative__reviews > h3 {
+    border-top: 2px solid $primary-hover;
+    border-bottom: 2px solid $primary-hover;
+    border-radius: 10px;
+}

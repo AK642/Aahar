@@ -1,0 +1,32 @@
+@import './variables';
+
+.orderList {
+    padding-bottom: 20px;
+}
+
+.orderList > .card {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $primary;
+}
+
+.orderList > .card > .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderList > .card > .header > h2 {
+    color: $pure;
+    font-size: 24px;
+}
+
+.orderList > .card > .header > h3 {
+    font-size: 24px;
+}
+
+.orderList > .card > .items__list > h2 {
+    text-align: end;
+    padding-right: 15px;
+    font-size: 28px;
+}
